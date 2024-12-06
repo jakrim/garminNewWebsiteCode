@@ -41,6 +41,44 @@ yarn dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Git Workflow
+
+The main code is maintained in the `master` branch. Here's how to work with the repository:
+
+1. Checkout to master:
+```bash
+git checkout master
+```
+
+2. Pull the latest changes:
+```bash
+git pull origin master
+```
+
+3. Create and switch to a new feature branch:
+```bash
+git checkout -b feature/your-feature-name
+```
+
+4. As you work, commit your changes:
+```bash
+git add .
+git commit -m "Description of your changes"
+```
+
+5. Push your changes to the remote repository:
+```bash
+git push origin feature/your-feature-name (aka your branch name)
+```
+
+6. To update your branch with the latest master changes:
+```bash
+git checkout master
+git pull origin master
+git checkout feature/your-feature-name
+git merge master
+```
+
 ## Project Structure
 
 ```
